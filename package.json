@@ -1,0 +1,22 @@
+{
+    "name": "egulp",
+    "version": "0.0.1",
+    "description": "use gulp to construct a front-end scaffold easily",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gaojunle/eGulp.git"
+    },
+    "keywords": [
+        "前端构建，脚手架，流程化，工程化，前端"
+    ],
+    "author": "gaojun",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gaojunle/eGulp/issues"
+    },
+    "homepage": "https://github.com/gaojunle/eGulp#readme"
+}
