@@ -1,0 +1,12 @@
+#hd {
+    position: fixed;
+}
+
+#hd .logo {}
+
+#hd .layer {}
+
+#hd .title {
+    font-size: 24px;
+    color: #4C578C;
+}

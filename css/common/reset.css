@@ -1,0 +1,20 @@
+body,h1,h2,h3,h4,h5,h6,blockquote,p,pre,
+dl,dd,menu,ol,ul,
+caption,th,td,
+form,fieldset,legend,input,button,textarea{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+menu,ol,ul{list-style:none}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0;vertical-align:middle}
+address,cite,dfn,em,var{font-style:normal}
+code,kbd,pre,samp{font-family:'courier new',courier,monospace}
+input,button,textarea,select{font-size:100%;outline:none}
+abbr[title]{border-bottom:1px dotted;cursor:help}
+a{text-decoration:none;outline:none}
+body,input,button,textarea,select,option,optgroup{font:12px/1.5 STHeiti,'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;}
+.clearfix{*zoom:1;}
+.clearfix:after{display:block;content:"clear";height:0;clear:both;overflow:hidden;visibility:hidden;}
+.dis-ib{ display: inline-block; vertical-align: middle; *display: inline; *zoom: 1; *vertical-align:auto;}
+.hidden{ display: none;}
+.fl{ float: left;}
+.fr{ float: right;}

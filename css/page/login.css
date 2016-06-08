@@ -1,0 +1,95 @@
+html,
+body {
+    height: 100%;
+    background-color: #fcfcfc;
+}
+
+.wrapper {
+    width: 356px;
+    height: 100%;
+    margin: 0px auto;
+    display: table;
+}
+
+.container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.wrapper .title {
+    height: 22px;
+    font-size: 16px;
+    color: #715883;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ipt {
+    height: 45px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #ebebeb;
+    padding-left: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    width: 115px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.8px;
+    background-color: #715883;
+    border: solid 0.8px #715883;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    background: #4c385a;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.mt25 {
+    margin-top: 25px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/*特殊定义*/
+
+.box {
+    height: 205px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: solid 1px #f0f0f0;
+    padding: 45px;
+}
+
+.help {
+    font-size: 16px;
+    color: #bfbdbf;
+    text-align: center;
+    margin-top: 34px;
+}

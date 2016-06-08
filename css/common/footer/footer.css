@@ -1,0 +1,21 @@
+/*
+function: 通用页尾
+prefix: footer
+time: 2015-9-17
+author  liuling | liuling-pd@360.com6
+*/
+#ft { width: 100%; margin-top: 30px; height: 90px; background-color: #272c40; text-align: center; font-size: 0;}
+#ft .ft { width:auto; margin: 0 auto; color: #fff;}
+#ft .ft .ft-box { display: inline-block; *display: inline; *zoom: 1; padding: 16px 60px 8px; text-align: left; font-size: 12px;}
+#ft .ft .ft-box .icon { float: left; width: 40px; height: 40px; margin-right: 12px; _display: inline; background: url(http://p6.qhimg.com/t0179a51570261243db.png) no-repeat;}
+#ft .ft .ft-box .about-icon { background-position: -364px -224px;}
+#ft .ft .ft-box .contact-icon { background-position: -336px -326px;}
+#ft .ft .ft-box .txt { float: left;}
+#ft .ft .ft-box .txt h5 { font-size: 16px; color: #fff; font-weight: 100; line-height: 40px;}
+#ft .ft .ft-box .txt a { color: #fff;}
+#ft .ft .ft-box .txt .eng { color: #dedede; color: rgba(255, 255, 255, .6); *color: #dedede; *margin-top: -4px;}
+#ft .ft .ft-box .txt-phone { font-size: 16px; color: #fff; border-top: 1px solid #fff; border-bottom: 1px solid #fff; line-height: 30px; margin-top: 4px;}
+#ft .ft .line { display: inline-block; *display: inline; *zoom: 1; vertical-align: 18px; width: 1px; height: 20px; border: none; background-color: #686b79; background-color: rgba(255, 255, 255, .1); *background-color: #686b79;}
+#ft .ft .copyright { text-align: center; color: #777986; font-size: 12px;}
+#ft .ft .copyright span { margin: 0 25px;}
+#ft .ft .copyright a { color: #777986;}

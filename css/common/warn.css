@@ -1,0 +1,11 @@
+.warn-wrapper { background-color: #3377c8; text-align: center; padding: 63px 0 172px 0;}
+.warn-pic { width: 430px; margin: 106px 0 34px 0;}
+.textstyle2 { font-size: 16px; color: #fff;}
+.textstyle2 em { font-size: 24px; font-style: normal;}
+.warn-text p a { display: block; width: 105px; height: 38px; line-height:38px; overflow: hidden; margin: 25px auto 0;
+    background-color: #3377c8; border: 1px solid #fff; color: #fff; font-size: 12px;}
+.warn-text p a i,.warn-text p a span{display:inline-block; vertical-align: middle;}
+.warn-text p a .ico-home{ width: 15px; height: 15px; margin-right: 8px; background-image: url(../../img/ico-common.png); background-repeat: no-repeat; background-position: -40px -211px;}
+.warn-text p a:hover { background-color: #fff; border: 1px solid #3377c8; color: #3377c8;}
+.warn-text p a:hover .ico-home{ background-position: -60px -211px;}
+#ft { margin-top: 0;}
