@@ -9,17 +9,17 @@ var path = require('path'),                 //路径处理
     changed = require('gulp-changed'),      //只对有修改的文件进行处理
     upload = require('gulp-upload');        //上传
 
-var headerBanner = '/** @version v ' + moment.format('YYYY-MM-DD HH:mm:ss') + ' */\n';
+var headerTxt = '/** @version v ' + moment.format('YYYY-MM-DD HH:mm:ss') + ' */\n';
 
+//压缩css/page目录下.css文件，自动添加私有前缀
 var minifyCss = require("gulp-minify-css"),         //压缩CSS
     autoprefixer = require('gulp-autoprefixer');    //增加私有变量前缀
-
 gulp.task('css', function () {
     gulp.src('css/**/page/**/*.css') // 要压缩的css文件
         .pipe(changed('build/css'))
         .pipe(autoprefixer({browsers: ['last 5 versions']}))
         .pipe(minifyCss()) //压缩css
-        .pipe(header(headerBanner))
+        .pipe(header(headerTxt))
         .pipe(gulp.dest(function (file) {
             var nowTime = '[' + moment.format('HH:mm:ss') + ']';
             console.log(nowTime + ' Optimizing ' + file.history[0].replace(file.cwd, ''));
@@ -33,7 +33,7 @@ gulp.task('html', function () {
     return gulp.src('html/**/*.html')
         .pipe(changed('build/html'))
         .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(header(headerBanner))
+        .pipe(header(headerTxt))
         .pipe(gulp.dest(function (file) {
             var nowTime = '[' + moment.format('HH:mm:ss') + ']';
             console.log(nowTime + ' Optimizing ' + file.history[0].replace(file.cwd, ''));
@@ -49,29 +49,11 @@ gulp.task('js', function () {
         .pipe(requirejsOptimize({
             mainConfigFile: 'js/common/config/requireConfig.js'
         }))
-        .pipe(header(headerBanner))
+        .pipe(header(headerTxt))
         .pipe(gulp.dest('build/js'));
 });
 
-gulp.task('upload', function () {
-    var options = {
-        server: 'http://192.168.0.77:7890/upload',
-        data: {
-            dirname: 'upload',
-            fileName: 'dest.js'
-        },
-        callback: function (err, data, res) {
-            if (err) {
-                console.log('error:' + err.toString());
-            } else {
-                console.log(data.toString());
-            }
-        }
-    }
-    return gulp.src('server.js')
-        .pipe(upload(options));
-});
-
+//sftp可以指定文件目录上传到服务器指定目录
 var sftp = require('gulp-sftp');
 gulp.task('sftp', function () {
     return gulp.src('build/css/**/*.*')

@@ -3,7 +3,6 @@ license
 ignore
 build
 config.json
-.gulp
 .svn/
 .idea/
 node_modules/
